@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Новоселов](https://up.htmlacademy.ru/adaptive/18/user/980599).
-* Наставник: `Неизвестно`.
+* Наставник: Дмитрий Казанцев.
 
 ---
 
