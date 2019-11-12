@@ -7,107 +7,108 @@
 <body>
   <div class="wrapper">
     <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип" width="" height="" alt="">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- Гамбургер -->
-          <ul class="main-nav__list nav-list">
-            <li class="nav-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav-list__item">
-              <a>Вязание на заказ</a></li>
-            <li class="nav-list__item nav-list__item--search">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="nav-list__item nav-list__item--basket">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul >
-          <ul class="main-nav__list nav-list__lower">
-            <li class="nav-list__item">
-              <a href="#">Новые поступления</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">Распродажа</a>
-            </li>
-            <li class="nav-list__item nav-list__item--delivery">
-              <a href="#">Бесплатная доставка по России</a>
-            </li>
-          </ul>
-        </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип" width="150" height="150">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- Гамбургер -->
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--basket" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul >
+        <ul class="main-nav__list lower-list">
+          <li class="lower-list__item">
+            <a class="lower-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="lower-list__item">
+            <a class="lower-list__link" href="#">Распродажа</a>
+          </li>
+          <li class="lower-list__item">
+            <a class="lower-list__link lower-list__link--delivery" href="#">Бесплатная доставка по России</a> <!-- Вроде в проекте не ссылка! -->
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-form">
       <h1 class="page-form__title title">Вязание на заказ</h1>
       <p class="page-form__completed-form">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="order-type order__list">
+        <fieldset class="order__block">
           <legend class="order__title">Тип</legend>
-          <ul class="order-type__list">
-            <li class="order-type__item">
+          <ul class="order__list radio-list">
+            <li class="radio-list__item">
               <input type="radio" name="order-type" id="type-accessory" checked>
               <label for="type-accessory">Аксессуар для интерьера</label>
             </li>
-            <li class="order-type__item">
+            <li class="radio-list__item">
               <input type="radio" name="order-type" id="type-toy">
               <label for="type-toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-color order__list">
+        <fieldset class="order__block">
           <legend class="order__title">Цвет</legend>
-          <ul class="order-color__list">
-            <li class="order-color__item">
+          <ul class="order__list checkbox-list">
+            <li class="checkbox-list__item">
               <input type="checkbox" name="order-white" id="color-white" checked>
               <label for="color-white">Белый</label>
             </li>
-            <li class="order-color__item">
+            <li class="checkbox-list__item">
               <input type="checkbox" name="order-grey" id="color-grey" checked>
               <label for="color-grey">Серый</label>
             </li>
-            <li class="order-color__item">
+            <li class="checkbox-list__item">
               <input type="checkbox" name="order-tiffany" id="color-tiffany">
               <label for="color-tiffany">"Тиффани"</label>
             </li>
-            <li class="order-color__item">
+            <li class="checkbox-list__item">
               <input type="checkbox" name="order-black" id="color-black">
               <label for="color-black">Черный</label>
             </li>
-            <li class="order-color__item">
+            <li class="checkbox-list__item">
               <input type="checkbox" name="order-pink" id="color-pink">
               <label for="color-pink">Розовый</label>
             </li>
-            <li class="order-color__item">
+            <li class="checkbox-list__item">
               <input type="checkbox" name="order-orange" id="color-orange">
               <label for="color-orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-name order__list">
+        <fieldset class="order__block">
           <legend class="order__title">ФИО</legend>
-          <ul class="order-name__list">
-            <li class="order-name__item">
+          <ul class="order__list text-list">
+            <li class="text-list__item">
               <input type="text" name="order-name" id="name-field" placeholder="Введите ваше имя*" required>
               <label for="name-field">Имя:</label>
             </li>
-            <li class="order-name__item">
+            <li class="text-list__item">
               <input type="text" name="order-surname" id="surnam-field" placeholder="Укажите фамилию*" required>
               <label for="surnam-field">Фамилия:</label>
             </li>
-            <li class="order-name__item">
+            <li class="text-list__item">
               <input type="text" name="order-patronymic" id="patronymic-field" placeholder="Отчество, если желаете">
               <label for="patronymic-field">Отчество:</label>
             </li>
           </ul>
         </fieldset>
-        <div class="order__list">
+        <div class="order__list contact-list">
           <input type="tel" name="order-phone" id="phone-field" placeholder="+7 XXX XX XX*" pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
           <label class="order__title" for="phone-field">Тел</label>
           <input type="email" name="order-email" id="email-field" placeholder="Ваш Email*" required>
           <label class="order__title" for="email-field">E-mail</label>
         </div>
-        <div class="order__list">
+        <div class="order__list proposition-list">
           <textarea name="order-proposition" id="proposition-field">Опишите все ваши пожелания к заказу</textarea>
           <label class="order__title" for="proposition-field">Доп</label>
         </div>
@@ -117,7 +118,7 @@
     </main>
     <footer class="page-footer">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип" width="" height="">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип" width="150" height="150">
         </a>
         <ul class="page-footer__list social-list">
           <li class="social-list__item">
@@ -131,9 +132,9 @@
           </li>
         </ul>
         <p class="page-footer__developer developer-item">
-          <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="developer-item__logo" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-            <svg class="page-footer__logo-image"></svg> <!-- Странный эффект: пустое пространство -->
+            <svg class="developer-item__logo-image"></svg> <!-- Странный эффект: пустое пространство -->
           </a>
         </p>
     </footer>
