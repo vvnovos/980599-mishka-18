@@ -3,15 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка: главная</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип" width="150" height="150">
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип" width="86" height="35">
+        </a>
+        <button class="page-header__nav-button" type="button" aria-label="Открыть меню"></button> <!-- Гамбургер -->
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button> <!-- Гамбургер -->
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
@@ -41,13 +45,13 @@
     </header>
     <main class="page-main">
       <section class="starting">
-        <h1 class="starting__title title">Милые штучки ручной работы для дома</h1>
+        <h1 class="starting__title title">Милые штуки ручной работы для дома</h1>
         <ul class="starting__list">
           <li class="starting__item starting__item--decor">
-            <a class="starting__link" href="#">Предметы интерьера</a>
+            <a class="starting__link" href="#"><span class="starting__text">Предметы интерьера</span></a>
           </li>
           <li class="starting__item starting__item--toys">
-            <a class="starting__link" href="#">Детские игрушки</a>
+            <a class="starting__link" href="#"><span class="starting__text">Детские игрушки</span></a>
           </li>
         </ul>
       </section>
@@ -69,7 +73,7 @@
             <td class="product__value">15 см</td>
           </tr>
         </table>
-        <img class="product_image" src="https://via.placeholder.com/150x150" alt="Вязаные корзинки" width="150" height="150">
+        <img class="product_image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="315" height="260">
         <b class="product__price">Цена: 990 руб.</b>
         <a class="product__button button" href="#">Заказать</a>
       </section>
@@ -92,20 +96,21 @@
           <cite class="reviews__author">Анастасия Красильникова</cite>
           <a class="reviews__link" href="mailto:@misssssiskras">@misssssiskras</a>
         </blockquote>
-        <button class="reviews__button-left" type="button">Листаем влево</button>
-        <button class="reviews__button-right" type="button">Листаем вправо</button>
+        <button class="reviews__button-left" type="button" aria-label="Листаем влево">←</button>
+        <button class="reviews__button-right" type="button" aria-label="Листаем влево">→</button>
         <a class="reviews__button button" href="#">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__title title">Контакты</h2>
-        <p class="contacts__mail">e-mail:<a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+        <p class="contacts__mail">e-mail:<a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
         <p class="contacts__adress">адрес: г. Санкт-Петербург ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        <div class="map"></div>
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип" width="150" height="150">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип" width="102" height="34">
       </a>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
@@ -120,8 +125,10 @@
       </ul>
       <p class="page-footer__developer developer-item">
         <a class="developer-item__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-          <svg class="developer-item__logo-image"></svg> <!-- Странный эффект: пустое пространство -->
+          <span class="developer-item__text">Разработано</span>
+          <svg class="developer-item__logo-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" fill="#63D1BB"/>
+          </svg>
         </a>
       </p>
     </footer>
@@ -132,15 +139,15 @@
         <ul class="modal-show__list">
           <li class="modal-show__item">
             <input type="checkbox" name="size-s" id="basket-small" checked>
-            <label for="basket-small">S</label>
+            <label for="basket-small" class="modal-show__label">S</label>
           </li>
           <li class="modal-show__item">
             <input type="checkbox" name="size-m" id="basket-middle">
-            <label for="basket-middle">M</label>
+            <label for="basket-middle" class="modal-show__label">M</label>
           </li>
           <li class="modal-show__item">
             <input type="checkbox" name="size-l" id="basket-large">
-            <label for="basket-large">L</label>
+            <label for="basket-large" class="modal-show__label">L</label>
           </li>
         </ul>
         <button class="modal-show__button button" type="submit">Добавить</button>
