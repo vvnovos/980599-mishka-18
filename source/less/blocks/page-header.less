@@ -1,14 +1,19 @@
 .page-header__logo-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 22px;
+  padding-top: 22px;
+}
+
+.page-header__logo {
+  max-width: 86px;
+  height: 35px
 }
 
 .page-header__logo-image {
   max-width: 86px;
   height: 35px;
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 18px;
-  padding-top: 18px;
 }
 
 .page-header__nav-button {
@@ -18,4 +23,35 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
+}
+
+@media @tablet {
+  .page-header {
+    padding: 0 50px;
+    position: relative;
+  }
+
+  .page-header__logo-wrapper {
+    position: absolute;
+  }
+
+  .page-header__nav-button {
+    display: none;
+  }
+
+  .page-header__logo-image {
+    margin: 0;
+  }
+}
+
+@media @desktop {
+  .page-header {
+    padding: 0;
+  }
+
+  .page-header__logo-wrapper {
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+  }
 }

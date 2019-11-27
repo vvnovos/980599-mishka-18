@@ -1,0 +1,51 @@
+
+.proposition-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.proposition-list__input {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.3);
+  padding: 17px 0 89px 17px;
+  border: solid 2px #444444;
+}
+
+.proposition-list__label {
+  margin-bottom: 30px;
+}
+
+@media @tablet {
+  .proposition-list {
+    padding: 50px 50px 53px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .proposition-list__input {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .proposition-list__label {
+    margin-bottom: 0;
+    padding-top: 17px;
+  }
+}
+
+@media @desktop {
+  .proposition-list {
+    padding-right: 225px;
+    padding-left: 112px;
+   }
+
+  .proposition-list__input {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

@@ -1,6 +1,56 @@
+.contact-list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 0;
+}
+
 .contact-list__input {
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
   color: rgba(68, 68, 68, 0.3);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  box-shadow: inset 0px -2px 0 0 #000000;
+  margin-bottom: 34px;
+}
+
+@media @tablet {
+  .contact-list__wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contact-list {
+    padding-top: 50px;
+    padding-bottom: 26px;
+  }
+
+  .contact-list__input {
+    font-size: 19px;
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    padding-left: 17px;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .contact-list__label {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+@media @desktop {
+  .contact-list__wrapper {
+    padding-right: 225px;
+    padding-left: 112px;
+  }
 }

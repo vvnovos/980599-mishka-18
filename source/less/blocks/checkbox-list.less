@@ -1,7 +1,18 @@
 .checkbox-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.checkbox-list__item {
+  display: flex;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .checkbox-list__label {
@@ -9,4 +20,73 @@
   line-height: 18px;
   font-weight: 700;
   color: @font-color-base;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    min-width: 38px;
+    height: 37px;
+    border: solid 2px #444444;
+    margin-right: 22px;
+  }
+}
+
+.checkbox-list__input:checked + .checkbox-list__label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 9px;
+  border-left: solid 2px #444444;
+  border-bottom: solid 2px #444444;
+  left: 9px;
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+@media @tablet {
+  .checkbox-list {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 204px;
+    align-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .checkbox-list__item {
+    margin: 0;
+  }
+
+  .checkbox-list__label {
+    min-width: 238px;
+    font-size: 19px;
+    line-height: 18px;
+
+    &::before {
+      content: "";
+      min-width: 50px;
+      height: 48px;
+      margin-right: 28px;
+    }
+  }
+
+  .checkbox-list__input:checked + .checkbox-list__label::after {
+    border: none;
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 23px;
+    transform: rotate(0);
+    left: 12px;
+    top: 18px;
+  }
+}
+
+@media @desktop {
+  .checkbox-list {
+    min-height: 128px;
+  }
 }

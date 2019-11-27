@@ -16,6 +16,7 @@
   line-height: 20px;
   font-weight: 700;
   color: @font-color-legend;
+  text-transform: uppercase;
   margin-bottom: 22px;
 }
 
@@ -46,4 +47,114 @@
 .product__field {
   width: 38%;
   padding: 10px 0;
+}
+
+@media @tablet {
+
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 52px;
+    position: relative;
+  }
+
+  .product__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product__week {
+    line-height: 17px;
+    max-width: 70px;
+    margin-left: 150px;
+    text-align: center;
+  }
+
+  .product__presentation {
+    max-width: 282px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    margin-right: 103px;
+  }
+
+  .product__list {
+    max-width: 282px;
+    margin-right: 386px;
+    margin-bottom: 55px;
+  }
+
+  .product__image {
+    // временно для сетки
+    width: 333px;
+    height: 404px;
+    position: absolute;
+    right: 52px;
+    top: 146px;
+    margin-bottom: 0;
+  }
+
+  .product__price {
+    font-size: 20px;
+    padding-left: 72px;
+    margin-bottom: 22px;
+  }
+
+  .product__button {
+   width: 288px;
+   margin-right: 377px;
+  }
+}
+
+@media @desktop {
+  .product {
+    flex-direction: column;
+    position: relative;
+    padding: 130px 0 73px;
+  }
+
+  .product__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 225px;
+    margin-bottom: 48px;
+    max-width: 530px;
+  }
+
+  .product__week {
+    position: absolute;
+    margin-left: 100px;
+  }
+
+  .product__presentation {
+    margin: 0 0 48px 225px;
+  }
+
+  .product__list {
+    margin-left: 225px;
+    margin-bottom: 112px;
+  }
+
+  .product__price {
+    max-width: 282px;
+    margin-left: 225px;
+    padding: 0;
+    margin-bottom: 26px;
+  }
+
+  .product__button {
+    margin: 0;
+    margin-left: 225px;
+  }
+
+  .product__image {
+    // временно для сетки
+    width: 525px;
+    height: 636px;
+    position: absolute;
+    right: 50px;
+    top: 71px;
+    z-index: -1;
+  }
 }

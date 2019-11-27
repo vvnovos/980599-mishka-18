@@ -1,7 +1,6 @@
 .text-list {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .text-list__input {
@@ -9,6 +8,10 @@
   line-height: 18px;
   font-weight: 400;
   color: rgba(68, 68, 68, 0.3);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  box-shadow: inset 0px -2px 0 0 #000000;
 }
 
 .text-list__label {
@@ -16,4 +19,45 @@
   line-height: 18px;
   font-weight: 700;
   color: @font-color-base;
+  order: -1;
+}
+
+.text-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media @tablet {
+  .text-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .text-list__item {
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .text-list__label {
+    font-size: 19px;
+    padding-right: 26px;
+    align-self: center;
+  }
+
+  .text-list__input {
+    font-size: 19px;
+    padding-left: 17px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    flex-grow: 1;
+  }
 }

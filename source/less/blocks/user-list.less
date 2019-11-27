@@ -1,8 +1,11 @@
 .user-list {
-  display: none;
-  list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.user-list__item {
+  display: none;
+  list-style: none;
 }
 
 .user-list__link {
@@ -12,5 +15,48 @@
   &--delivery {
     color: @font-color-text;
     font-weight: 400;
+  }
+}
+
+@media @tablet {
+  .user-list__item--delivery {
+    display: flex;
+    margin-left: 357px;
+    margin-top: -60px;
+  }
+
+  .user-list__link--delivery {
+    padding: 18px 0 18px 82px
+  }
+}
+
+@media @desktop {
+  .user-list {
+    display: flex;
+    order: 3;
+  }
+
+  .user-list__item {
+    display: block;
+  }
+
+  .user-list__link {
+    display: flex;
+    padding: 18px 28px 18px 50px;
+  }
+
+  .user-list__link--sales {
+    padding-left: 37px;
+    padding-right: 59px;
+  }
+
+  .user-list__item--delivery {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .user-list__link--delivery {
+    padding-right: 50px;
+    padding-left: 35px;
   }
 }

@@ -99,3 +99,68 @@
     }
   }
 }
+
+@media @tablet {
+  .features {
+    padding: 59px 51px 24px;
+  }
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 47px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 98px 58px 0;
+    width: 236px;
+
+    &--flower {
+      order: -1;
+      width: 226px;
+      margin-right: 108px;
+    }
+
+    &--ball {
+      width: 276px;
+      margin-right: 48px;
+    }
+
+    &--money {
+      order: 1;
+    }
+
+    &--rocket {
+      order: 2;
+      width: 300px;
+      margin-right: 0px;
+    }
+
+    &--heart {
+      order: 3;
+    }
+
+    &--gift {
+      order: 4;
+    }
+  }
+}
+
+@media @desktop {
+  .features {
+    padding: 70px 250px 30px 229px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 47px;
+  }
+}
