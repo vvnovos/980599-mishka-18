@@ -1,7 +1,9 @@
 .video {
-  box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px 58px;
+}
+
+.video__wrapper {
+  border: 1px solid #ececec;
 }
 
 .video__source {
@@ -27,12 +29,10 @@
 
 .video__header {
   padding: 25px 43px 22px 91px;
-  border: 1px solid #ececec;
 }
 
 .video__block {
   padding: 34px 43px 33px 34px;
-  border: 1px solid #ececec;
 }
 
 .video__button {
@@ -42,8 +42,11 @@
 
 @media @tablet {
   .video {
-    padding-left: 51px;
-    padding-right: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .video__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -51,14 +54,15 @@
 
   .video__source {
     order: -1;
-    // Временно для сетки
     width: 668px;
     height: 455px;
+    margin: 0 auto;
   }
 
   .video__header {
-    padding: 43px 0 41px 107px;
+    padding: 43px 319px 41px 107px;
     border-bottom: none;
+    margin: 0 auto;
   }
 
   .video__title {
@@ -83,17 +87,17 @@
 
 @media @desktop {
   .video {
+    padding-bottom: 105px;
+  }
+
+  .video__wrapper {
     position: relative;
-    padding-right: 51px;
-    padding-left: 51px;
-    padding-bottom: 60px;
-    border: 1px solid #ececec;
   }
 
   .video__source {
     position: absolute;
     // top: 0;
-    left: 0;
+    left: 50;
     width: 682px;
     height: 455px;
   }
@@ -101,7 +105,7 @@
   .video__header {
     padding: 0;
     padding-top: 100px;
-    margin-left: 711px;
+    margin-left: 761px;
     margin-bottom: 30px;
     width: 148px;
     border: none;
@@ -109,8 +113,9 @@
 
   .video__block {
     padding: 0;
-    width: 222px;
-    margin-left: 711px;
+    padding-bottom: 60px;
+    width: 230px;
+    margin-left: 761px;
     border: none;
   }
 

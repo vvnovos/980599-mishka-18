@@ -1,6 +1,6 @@
 .contacts {
   box-sizing: border-box;
-  padding: 26px 30px 36px;
+  padding: 26px 0 36px;
 }
 
 .contacts__title {
@@ -9,33 +9,43 @@
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 28px;
+  padding: 0 30px;
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+  font-size: @font-size-base;
+  line-height: 30px;
+  font-weight: 400;
+  color: @font-color-text;
 }
 
 .contacts__mail {
-  font-size: @font-size-base;
-  line-height: 30px;
-  font-weight: 400;
-  color: @font-color-text;
-  margin-bottom: 32px;
+   margin-bottom: 32px;
 }
 
 .contacts__adress {
-  font-size: @font-size-base;
-  line-height: 30px;
-  font-weight: 400;
-  color: @font-color-text;
   margin-bottom: 36px;
+  display: flex;
 }
 
 .contacts__link {
   color: @font-color-text;
+  margin-left: 28px;
+}
+
+.contacts__split {
+  margin-right: 28px;
+}
+
+.contacts__button {
+  width: 260px;
 }
 
 @media @tablet {
   .contacts {
     padding: 71px 0 57px;
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .contacts__title {
@@ -46,25 +56,28 @@
     padding-left: 51px;
   }
 
-  .contacts__mail {
+  .contacts__wrapper {
     font-size: 17px;
     display: flex;
-    width: 284px;
-    justify-content: space-between;
-    margin: 0;
-    margin-left: 55px;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    width: 50%;
+  }
+
+  .contacts__mail {
+    padding: 0;
+  }
+
+  .contacts__link {
+    margin-left: 21px;
   }
 
   .contacts__adress {
-    font-size: 17px;
     display: flex;
-    width: 297px;
+    padding: 0;
     margin: 0;
-    margin-left: 55px;
-  }
-
-  .contacts__split {
-    margin-right: 25px;
+    padding-right: 48px;
+    box-sizing: border-box;
   }
 
   .contacts__button {
@@ -76,7 +89,9 @@
   .contacts {
     padding: 71px 50px 105px;
     position: relative;
+    display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .contacts__title {
@@ -87,6 +102,10 @@
     padding: 0;
     margin-left: 168px;
     margin-top: 76px;
+  }
+
+  .contacts__wrapper {
+    padding: 0;
   }
 
   .contacts__mail {

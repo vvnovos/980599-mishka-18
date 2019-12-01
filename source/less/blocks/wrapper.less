@@ -1,17 +1,14 @@
 .wrapper {
   margin: 0 auto;
   padding: 0;
-  width: @mobile-width;
+  min-width: @mobile-width;
 
   @media @tablet {
-    margin: 0 auto;
-    padding: 0;
-    width: @tablet-width;
+    min-width: @tablet-width;
   }
 
   @media @desktop {
-    box-sizing: border-box;
-    margin: 0 auto;
     min-width: @desktop-width;
+    max-width: @desktop-width;
   }
 }

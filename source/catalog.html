@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Мишка: каталог товара</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="wrapper">
@@ -52,7 +54,7 @@
       <h1 class="page-catalog__title title">Каталог товаров</h1>
       <section class="page-catalog__product catalog">
         <ul class="catalog__list card-product">
-          <li class="catalog__item card-product__item">
+          <li class="card-product__item">
             <a class="card-product__link-image" href="#">
               <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
             </a>
@@ -67,7 +69,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog__item card-product__item">
+          <li class="card-product__item">
             <a class="card-product__link-image" href="#">
               <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="190">
             </a>
@@ -82,7 +84,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog__item card-product__item">
+          <li class="card-product__item">
             <a class="card-product__link-image" href="#">
               <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="190">
             </a>
@@ -100,15 +102,17 @@
         </ul>
       </section>
       <section class="video">
-        <div class="video__header">
-          <h2 class="video__title">Процесс производства</h2>
-        </div>
-        <video class="video__source" poster="img/video-mobile@1x.jpg" width="260" height="150">
-          <source src="video.mp4" type="video/mp4">
-        </video>
-        <div class="video__block">
-          <p class="video__text">По просьбе наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-          <a class="video__button button" href="form.html">Сделать заказ</a> <!-- Неясно какое действие -->
+        <div class="video__wrapper">
+          <div class="video__header">
+            <h2 class="video__title">Процесс производства</h2>
+          </div>
+          <video class="video__source" poster="img/video-mobile@1x.jpg" width="260" height="150">
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <div class="video__block">
+            <p class="video__text">По просьбе наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+            <a class="video__button button" href="form.html">Сделать заказ</a> <!-- Неясно какое действие -->
+          </div>
         </div>
       </section>
     </main>
@@ -124,7 +128,7 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">Facebook</a>
           </li>
-          <li class="socialt__item">
+          <li class="social__item">
             <a class="social__link social__link--twitter" href="#">Twitter</a>
           </li>
         </ul>

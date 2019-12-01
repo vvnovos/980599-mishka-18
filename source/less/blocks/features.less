@@ -21,59 +21,62 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  margin-bottom: 35px;
+  padding-top: 54px;
+  padding-bottom: 29px;
+  position: relative;
 
   &::before {
     content: "";
     display: block;
     background-repeat: no-repeat;
+    position: absolute;
   }
 
   &--flower {
-    margin-right: 85px;
+    padding-right: 85px;
 
     &::before {
       background-image: url("../../img/icon-feature-flower.svg");
       width: 32px;
       height: 37px;
-      margin-bottom: 16px;
-      margin-left: 9px;
+      left: 8px;
+      top: 0;
     }
   }
 
   &--money {
-    margin-right: 59px;
+    padding-right: 59px;
 
     &::before {
       background-image: url("../../img/icon-feature-money.svg");
       width: 47px;
       height: 27px;
-      margin-bottom: 26px;
-      margin-left: 0;
+      left: 0;
+      top: 0;
     }
   }
 
   &--heart {
-    margin-right: 78px;
+    padding-right: 78px;
 
     &::before {
       background-image: url("../../img/icon-feature-heart.svg");
       width: 34px;
       height: 27px;
-      margin-bottom: 21px;
-      margin-left: 7px;
+      left: 7px;
+      top: 6px;
     }
   }
 
   &--ball {
-    margin-right: 40px;
+    padding-right: 40px;
 
     &::before {
       background-image: url("../../img/icon-feature-ball.svg");
       width: 35px;
       height: 34px;
-      margin-bottom: 18px;
-      margin-left: 3px;
+      left: 3px;
+      top: 3px;
     }
   }
 
@@ -82,27 +85,27 @@
       background-image: url("../../img/icon-feature-rocket.svg");
       width: 55px;
       height: 23px;
-      margin-bottom: 27px;
-      margin-left: -6px;
+      left: -5px;
+      top: 4px;
     }
   }
 
   &--gift {
-    margin-right: 50px;
+    padding-right: 50px;
 
     &::before {
       background-image: url("../../img/icon-feature-gift.svg");
       width: 33px;
       height: 32px;
-      margin-bottom: 20px;
-      margin-left: 3px;
+      left: 3px;
+      top: 2px;
     }
   }
 }
 
 @media @tablet {
   .features {
-    padding: 59px 51px 24px;
+    padding: 59px 50px 24px;
   }
 
   .features__title {
@@ -119,36 +122,37 @@
   .features__item {
     font-size: 20px;
     line-height: 22px;
-    margin: 0 98px 58px 0;
-    width: 236px;
+    padding-right: 0;
+    width: 50%;
+    margin-bottom: 28px;
+    box-sizing: border-box;
 
     &--flower {
       order: -1;
-      width: 226px;
-      margin-right: 108px;
+      padding-right: 129px;
     }
 
     &--ball {
-      width: 276px;
-      margin-right: 48px;
+      padding-right: 87px;
     }
 
     &--money {
       order: 1;
+      padding-right: 98px;
     }
 
     &--rocket {
       order: 2;
-      width: 300px;
-      margin-right: 0;
     }
 
     &--heart {
       order: 3;
+      padding-right: 122px;
     }
 
     &--gift {
       order: 4;
+      padding-right: 92px;
     }
   }
 }
