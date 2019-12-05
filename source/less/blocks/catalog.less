@@ -1,12 +1,34 @@
 
 .catalog {
-  padding: 30px 30px 35px 30px;
+  padding: 30px 30px 0 30px;
 }
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  .catalog__item {
+    margin: 0 auto 30px;
+  }
 
 @media @tablet {
   .catalog {
     padding: 0 50px 0;
     margin-top: 67px;
+  }
+
+  .catalog__list {
+    justify-content: flex-start;
+    min-width: 668px;
+  }
+
+  .catalog__item {
+    margin: 0 auto 54px;
   }
 }
 
@@ -14,5 +36,14 @@
   .catalog {
     margin-top: 110px;
     margin-bottom: 57px;
+  }
+
+  .catalog__item {
+    margin: 0;
+  }
+
+  .catalog__list {
+    padding: 0;
+    justify-content: space-between;
   }
 }
