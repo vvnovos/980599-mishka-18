@@ -16,11 +16,7 @@
   color: @font-color-legend;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 0;
   margin-top: 0;
-}
-
-.order__title-text {
   display: flex;
   align-items: center;
 
@@ -76,6 +72,11 @@
   .order__title {
     max-width: 165px;
     padding-top: 65px;
+    align-items: stretch;
+
+    &::after {
+      content: none;
+    }
   }
 
   .order__list {

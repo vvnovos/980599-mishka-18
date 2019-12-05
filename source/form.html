@@ -52,51 +52,47 @@
       <h1 class="page-form__title title">Вязание на заказ</h1>
       <p class="page-form__completed-form">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order" action="https://echo.htmlacademy.ru" method="get">
-        <div class="order__block">
+        <fieldset class="order__block">
           <div class="order__wrapper">
-            <h3 class="order__title">
-              <span class="order__title-text">Тип</span>
-            </h3>
+            <h3 class="order__title">Тип</h3>
             <ul class="order__list radio-list">
               <li class="radio-list__item">
-                <input class="radio-list__input visually-hidden" type="radio" name="order-type" id="type-accessory" checked>
+                <input class="radio-list__input visually-hidden" type="radio" name="order-type" id="type-accessory" value="accessory" checked>
                 <label class="radio-list__label" for="type-accessory">Аксессуар для интерьера</label>
               </li>
               <li class="radio-list__item">
-                <input class="radio-list__input visually-hidden" type="radio" name="order-type" id="type-toy">
+                <input class="radio-list__input visually-hidden" type="radio" name="order-type" id="type-toy" value="toy">
                 <label class="radio-list__label" for="type-toy">Детская игрушка</label>
               </li>
             </ul>
           </div>
-        </div>
+        </fieldset>
         <fieldset class="order__block order__block--grey">
           <div class="order__wrapper order__wrapper--color">
-            <h3 class="order__title">
-              <span class="order__title-text">Цвет</span>
-            </h3>
+            <h3 class="order__title">Цвет</h3>
             <ul class="order__list checkbox-list">
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-white" id="color-white" checked>
+                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-color" value="order-white" id="color-white" checked>
                 <label class="checkbox-list__label" for="color-white">Белый</label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-grey" id="color-grey" checked>
+                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-color" value="order-grey" id="color-grey" checked>
                 <label class="checkbox-list__label" for="color-grey">Серый</label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-tiffany" id="color-tiffany">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-color" value="order-tiffany" id="color-tiffany">
                 <label class="checkbox-list__label" for="color-tiffany">&#171;Тиффани&#187;</label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-black" id="color-black">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-color" value="order-black" id="color-black">
                 <label class="checkbox-list__label" for="color-black">Черный</label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-pink" id="color-pink">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-color" value="order-pink" id="color-pink">
                 <label class="checkbox-list__label" for="color-pink">Розовый</label>
               </li>
               <li class="checkbox-list__item">
-                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-orange" id="color-orange">
+                <input class="checkbox-list__input visually-hidden" type="checkbox" name="order-color" value="order-orange" id="color-orange">
                 <label class="checkbox-list__label" for="color-orange">Оранжевый</label>
               </li>
             </ul>
@@ -104,7 +100,7 @@
         </fieldset>
         <fieldset class="order__block">
           <div class="order__wrapper">
-            <h3 class="order__title"><span class="order__title-text">ФИО</span></h3>
+            <h3 class="order__title">ФИО</h3>
             <ul class="order__list text-list">
               <li class="text-list__item">
                 <input class="text-list__input" type="text" name="order-name" id="name-field" placeholder="Введите ваше имя*" required>
@@ -123,17 +119,17 @@
         </fieldset>
         <div class="order__list order__list--grey contact-list">
           <div class="contact-list__wrapper">
-            <label class="order__title contact-list__label" for="phone-field"><span class="order__title-text">Тел</span></label>
+            <label class="order__title contact-list__label" for="phone-field">Тел</label>
             <input class="contact-list__input" type="tel" name="order-phone" id="phone-field" placeholder="+7 XXX XX XX*" pattern="\+7\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
           </div>
           <div class="contact-list__wrapper">
-            <label class="order__title contact-list__label" for="email-field"><span class="order__title-text">E-mail</span></label>
+            <label class="order__title contact-list__label" for="email-field">E-mail</label>
             <input class="contact-list__input" type="email" name="order-email" id="email-field" placeholder="Ваш Email*" required>
             </div>
         </div>
         <div class="order__list proposition-list">
-          <label class="order__title proposition-list__label" for="proposition-field"><span class="order__title-text">Доп</span></label>
-          <textarea class="proposition-list__input" name="order-proposition" id="proposition-field">Опишите все ваши пожелания к заказу</textarea>
+          <label class="order__title proposition-list__label" for="proposition-field">Доп</label>
+          <textarea class="proposition-list__input" name="order-proposition" id="proposition-field" placeholder="Опишите все ваши пожелания к заказ"></textarea>
         </div>
         <div class="order__remark-button">
           <small class="order__remark"><sup>*</sup> Поля обязательный для заполнения</small>
