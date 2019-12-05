@@ -12,20 +12,21 @@
   color: @font-color-base;
   font-weight: 700;
 
-  &--delivery {
+  &--text {
     color: @font-color-text;
     font-weight: 400;
+    margin: 0;
   }
 }
 
 @media @tablet {
-  .user-list__item--delivery {
+  .user-list__item--text {
     display: flex;
     margin-left: 357px;
     margin-top: -60px;
   }
 
-  .user-list__link--delivery {
+  .user-list__link--text {
     padding: 18px 0 18px 82px;
   }
 }
@@ -37,25 +38,23 @@
   }
 
   .user-list__item {
-    display: block;
+    display: flex;
   }
 
-  .user-list__link {
-    display: flex;
+  .user-list__item:first-child .user-list__link {
     padding: 18px 28px 18px 50px;
   }
 
-  .user-list__link--sales {
-    padding-left: 37px;
-    padding-right: 59px;
+  .user-list__link {
+    padding: 18px 59px 18px 37px;
   }
 
-  .user-list__item--delivery {
+  .user-list__item--text {
     margin: 0;
     margin-left: auto;
   }
 
-  .user-list__link--delivery {
+  .user-list__link--text {
     padding-right: 50px;
     padding-left: 35px;
   }

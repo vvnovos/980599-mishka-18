@@ -3,7 +3,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav-list__link {
@@ -19,18 +18,18 @@
   .nav-list {
     display: flex;
     flex-wrap: wrap;
-    border: none;
   }
 
   .nav-list__link {
     padding: 18px 37px 18px 0;
+    border-bottom: none;
   }
 
-  .nav-list__item--basket {
+  .nav-list__item--cart {
     order: -1;
   }
 
-  .nav-list__link--basket {
+  .nav-list__link--cart {
     font-size: 17px;
     padding: 32px 0 32px 82px;
   }
@@ -62,10 +61,18 @@
     padding: 0;
   }
 
+  .nav-list__item:first-child {
+    border-right: 1px solid #ececec;
+  }
+
   .nav-list__link {
-    padding: 32px 37px 32px 50px;
+    padding: 32px 0 32px 37px;
     font-size: 17px;
     border-bottom: none;
+  }
+
+  .nav-list__item:first-child .nav-list__link {
+    padding: 32px 37px 32px 50px;
   }
 
   .nav-list__link--search {
@@ -73,13 +80,7 @@
     padding: 36px 32px 21px 32px;
   }
 
-  .nav-list__link--knitting {
-    padding-left: 37px;
-    padding-right: 0;
-    border-left: 1px solid #ececec;
-  }
-
-  .nav-list__link--basket {
+  .nav-list__link--cart {
     padding-left: 83px;
     padding-right: 51px;
   }
