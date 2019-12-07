@@ -46,6 +46,7 @@
   .contacts {
     padding: 71px 0 57px;
     max-width: 100%;
+    position: relative;
   }
 
   .contacts__title {
@@ -54,6 +55,17 @@
     margin-bottom: 57px;
     width: 100%;
     padding-left: 51px;
+
+    &::after {
+      content: "";
+      width: 47px;
+      height: 82px;
+      position: absolute;
+      background-image: url("../../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      right: 50px;
+      top: 66px;
+    }
   }
 
   .contacts__wrapper {
@@ -101,6 +113,11 @@
     padding: 0;
     margin-left: 168px;
     margin-top: 76px;
+
+    &::after {
+      left: 113px;
+      top: 140px;
+    }
   }
 
   .contacts__wrapper {
