@@ -51,7 +51,7 @@
     </header>
     <main class="page-main">
       <section class="starting">
-        <h1 class="starting__title title">Милые штуки ручной работы для дома</h1>
+        <h1 class="starting__title title">Милые штуки ручной<br>работы для дома</h1>
         <ul class="starting__list">
           <li class="starting__item starting__item--decor">
             <a class="starting__link" href="#"><span class="starting__text">Предметы интерьера</span></a>
@@ -60,6 +60,14 @@
             <a class="starting__link" href="#"><span class="starting__text">Детские игрушки</span></a>
           </li>
         </ul>
+        <!-- <ul class="starting__list">
+          <li class="starting__item">
+            <a class="starting__link starting__link--decor" href="#"><span class="starting__text">Предметы интерьера</span></a>
+          </li>
+          <li class="starting__item">
+            <a class="starting__link starting__link--toys" href="#"><span class="starting__text">Детские игрушки</span></a>
+          </li>
+        </ul> -->
       </section>
       <section class="product">
         <div class="product__header">
@@ -109,6 +117,10 @@
         <button class="reviews__button-left" type="button" aria-label="Листаем влево">←</button>
         <button class="reviews__button-right" type="button" aria-label="Листаем влево">→</button>
         <a class="reviews__button button" href="#">Написать</a>
+        <!-- <div class="reviews__navigation">
+          <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад"></button>
+          <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Вперед"></button>
+        </div> -->
       </section>
       <section class="contacts">
         <h2 class="contacts__title title">Контакты</h2>
@@ -148,19 +160,19 @@
     </footer>
     <div class="modal-show">
       <h2 class="modal-show__title title">Добавить в корзину</h2>
-      <p class="modal-show__option">Выберите размер</p>
+      <p class="modal-show__option">Выберите размер:</p>
       <form action="https://echo.htmlacademy.ru" method="get">
         <ul class="modal-show__list">
           <li class="modal-show__item">
-            <input class="modal-show__input visually-hidden" type="checkbox" name="size-s" id="basket-small" checked>
+            <input class="modal-show__input visually-hidden" type="checkbox" name="size" id="basket-small" value="size-s" checked>
             <label class="modal-show__label" for="basket-small" >S</label>
           </li>
           <li class="modal-show__item">
-            <input class="modal-show__input visually-hidden" type="checkbox" name="size-m" id="basket-middle">
+            <input class="modal-show__input visually-hidden" type="checkbox" name="size" id="basket-middle" value="size-m">
             <label class="modal-show__label" for="basket-middle">M</label>
           </li>
           <li class="modal-show__item">
-            <input class="modal-show__input visually-hidden" type="checkbox" name="size-l" id="basket-large">
+            <input class="modal-show__input visually-hidden" type="checkbox" name="size" id="basket-large" value="size-l">
             <label class="modal-show__label" for="basket-large">L</label>
           </li>
         </ul>
