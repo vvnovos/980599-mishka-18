@@ -34,6 +34,14 @@
   }
 }
 
+.radio-list__label:hover::before {
+  border-color: #62d1ba;
+}
+
+.radio-list__label:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
 .radio-list__input:checked + .radio-list__label::after {
   content: "";
   min-width: 16px;

@@ -33,6 +33,14 @@
   }
 }
 
+.checkbox-list__label:hover::before {
+  border-color: #62d1ba;
+}
+
+.checkbox-list__label:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
 .checkbox-list__input:checked + .checkbox-list__label::after {
   content: "";
   position: absolute;

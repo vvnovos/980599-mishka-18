@@ -10,7 +10,13 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
-  box-shadow: 0 2px 0 0 #000000;
+  box-shadow: inset 0 -2px 0 0 #000000;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    box-shadow: inset 0 -2px 0 0 #62d1ba;
+  }
 }
 
 .text-list__label {
@@ -19,6 +25,7 @@
   font-weight: 700;
   color: @font-color-base;
   order: -1;
+  cursor: pointer;
 }
 
 .text-list__item {
