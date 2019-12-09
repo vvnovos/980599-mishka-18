@@ -1,33 +1,32 @@
 .page-header__logo-wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
+}
+
+.page-header__logo {
+  display: block;
   padding-bottom: 22px;
   padding-top: 22px;
 }
 
-.page-header__logo {
-  max-width: 86px;
-  height: 35px;
-}
-
 .page-header__logo-image {
-  max-width: 86px;
+  display: block;
+  width: 86px;
   height: 35px;
+  margin: 0 auto;
 }
 
 .page-header__nav-button {
   position: absolute;
-  top: 22px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 10%;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 14px;
   cursor: pointer;
   border: none;
   background-color: transparent;
   background-image: url("../../img/icon-menu-open.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 @media @tablet {
@@ -46,6 +45,8 @@
 
   .page-header__logo-image {
     margin: 0;
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -57,6 +58,15 @@
   .page-header__logo-wrapper {
     left: 50%;
     transform: translate(-50%);
-    display: block;
+    margin: auto;
+  }
+
+  .page-header__logo {
+    padding: 0;
+  }
+
+  .page-header__logo-image {
+    width: 148px;
+    height: 72px;
   }
 }
