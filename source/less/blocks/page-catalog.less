@@ -17,7 +17,18 @@
     padding-top: 106px;
     padding-bottom: 78px;
     margin-top: -60px;
-    z-index: -1;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 23px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      position: absolute;
+      bottom: -12px;
+      left: -5px;
+    }
   }
 }
 
