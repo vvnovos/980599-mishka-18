@@ -6,6 +6,15 @@
   display: block;
   padding-bottom: 22px;
   padding-top: 22px;
+  border-bottom: 1px solid #ececec;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
@@ -35,6 +44,10 @@
     position: relative;
   }
 
+  .page-header__logo {
+    border-bottom: none;
+  }
+
   .page-header__logo-wrapper {
     position: absolute;
   }
@@ -58,7 +71,6 @@
   .page-header__logo-wrapper {
     left: 50%;
     transform: translate(-50%);
-    margin: auto;
   }
 
   .page-header__logo {

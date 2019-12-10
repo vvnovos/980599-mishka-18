@@ -13,7 +13,8 @@
 }
 
 .page-footer__logo-image {
-  max-width: 102px;
+  display: block;
+  color: @black;
 }
 
 .page-footer__social {
@@ -30,6 +31,18 @@
 
   .page-footer__logo {
     display: block;
+
+    &[href] {
+      cursor: pointer;
+    }
+
+    &[href]:hover .page-footer__logo-image {
+      color: #46c1ae;
+    }
+
+    &[href]:active .page-footer__logo-image {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__logo,

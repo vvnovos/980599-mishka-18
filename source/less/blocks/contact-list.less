@@ -4,6 +4,14 @@
   flex-direction: column;
   margin-top: 0;
   padding: 0;
+  position: relative;
+}
+
+.contact-list__image {
+  position: absolute;
+  right: 8px;
+  top: 31px;
+  opacity: 0.2;
 }
 
 .contact-list__input {
@@ -20,6 +28,11 @@
   &:hover,
   &:active {
     box-shadow: inset 0 -2px 0 0 #62d1ba;
+
+    & + .contact-list__image {
+      color: #62d1ba;
+      opacity: 1;
+    }
   }
 }
 
@@ -47,6 +60,11 @@
     width: 100%;
   }
 
+  .contact-list__image {
+    right: 76px;
+    top: 11px;
+  }
+
   .contact-list__label {
     padding-top: 17px;
     padding-bottom: 17px;
@@ -57,5 +75,8 @@
   .contact-list__wrapper {
     padding-right: 225px;
     padding-left: 112px;
+  }
+  .contact-list__image {
+    right: 226px;
   }
 }

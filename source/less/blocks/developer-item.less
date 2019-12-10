@@ -2,17 +2,25 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
-  color: @font-color-base;
   padding: 0;
+  color: @black;
 }
 
 .developer-item__logo-image {
-  max-width: 100%;
   margin-left: 20px;
+  color: @green-main;
 }
 
 .developer-item__logo {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  &:hover .developer-item__logo-image {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

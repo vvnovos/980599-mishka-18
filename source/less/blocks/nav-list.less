@@ -15,11 +15,31 @@
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
+
+    & .nav-list__link-image {
+      color: @green-main;
+    }
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+
+    & .nav-list__link-image {
+      opacity: 0.3;
+    }
   }
+}
+
+.nav-list__item {
+  position: relative;
+}
+
+.nav-list__link-image {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.2);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
 }
 
 .nav-list__item {
@@ -48,12 +68,12 @@
 
   .nav-list__item--search {
     order: -2;
-    margin-left: 322px;
+    margin-left: 325px;
   }
 
   .nav-list__link--search {
     font-size: 0;
-    padding: 29px 32px;
+    padding: 30px 47px 33px 32px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
   }
@@ -89,7 +109,7 @@
 
   .nav-list__link--search {
     font-size: 0;
-    padding: 36px 32px 21px 32px;
+    padding: 30px 47px 33px 32px;
   }
 
   .nav-list__link--cart {
