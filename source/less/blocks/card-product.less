@@ -1,14 +1,33 @@
-.card-product {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .card-product__link {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: @font-color-base;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.card-product {
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card-product__block {
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  padding: 23px 34px 26px 28px;
+  width: 260px;
 }
 
 .card-product__description {
@@ -28,13 +47,7 @@
 }
 
 .card-product__image {
-  vertical-align: top;
-}
-
-.card-product__block {
-  border: 1px solid #ececec;
-  box-sizing: border-box;
-  padding: 23px 34px 26px 28px;
+  display: block;
 }
 
 .card-product__title {
@@ -42,7 +55,102 @@
 }
 
 .card-product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   box-sizing: border-box;
   padding-top: 20px;
   border-top: 1px solid #ececec;
+}
+
+.card-product__button {
+  color: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    color: @green-main;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet {
+  .card-product__link {
+    font-size: 20px;
+  }
+
+  .card-product__price {
+    font-size: 17px;
+  }
+
+  .card-product__button {
+    font-size: 0;
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+  }
+
+  .card-product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card-product__image {
+    width: 50%;
+    min-width: 334px;
+    min-height: 334px;
+  }
+
+  .card-product__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 29px 32px 29px 29px;
+    width: 50%;
+    min-width: 334px;
+  }
+
+  .card-product__description {
+    font-size: @font-size-base;
+    margin-bottom: auto;
+  }
+
+  .card-product__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 27px;
+  }
+}
+
+@media @desktop {
+  .card-product {
+    flex-direction: column;
+    width: 316px;
+  }
+
+  .card-product__image {
+    min-width: 316px;
+    min-height: 462px;
+  }
+
+  .card-product__block {
+    min-width: 316px;
+    min-height: 197px;
+  }
+
+  .card-product__description {
+    margin: 0;
+  }
+
+  .card-product__wrapper {
+    margin-top: auto;
+  }
+
+  .card-product__title {
+    width: 232px;
+    margin-bottom: 6px;
+  }
 }

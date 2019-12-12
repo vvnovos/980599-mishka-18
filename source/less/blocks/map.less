@@ -1,9 +1,28 @@
 .map {
   background-color: @header-footer-bg;
   background-image: url("../img/map-mobile@1x.jpg");
+  // background-repeat: no-repeat;
   width: 100%;
   min-height: 457px;
   margin-bottom: 42px;
   min-width: 320px;
-  margin-left: -30px;
+}
+
+@media @tablet {
+  .map {
+    background-image: url("../img/map-tablet@1x.jpg");
+    margin: 50px 0;
+  }
+}
+
+@media @desktop {
+  .map {
+    background-image: url("../img/map-desktop@1x.jpg");
+    max-width: 525px;
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    right: 50px;
+    bottom: 105px;
+  }
 }

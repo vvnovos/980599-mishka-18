@@ -1,12 +1,28 @@
 .video {
-  box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px 58px;
+}
+
+.video__wrapper {
+  border: 1px solid #ececec;
+  padding: 0;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__source {
   width: 100%;
   vertical-align: middle;
+}
+
+.video__header {
+  padding: 25px 43px 22px 91px;
+  position: relative;
 }
 
 .video__title {
@@ -15,6 +31,18 @@
   font-weight: 700;
   color: @font-color-base;
   margin: 0;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 33px;
+  }
 }
 
 .video__text {
@@ -25,16 +53,95 @@
   margin: 0;
 }
 
-.video__header {
-  padding: 25px 43px 22px 91px;
-  border: 1px solid #ececec;
-}
-
 .video__block {
   padding: 34px 43px 33px 34px;
-  border: 1px solid #ececec;
 }
 
 .video__button {
   margin-top: 25px;
+  line-height: 16px;
+}
+
+@media @tablet {
+  .video {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .video__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .video__source {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    margin: 0 auto;
+  }
+
+  .video__header {
+    padding: 43px 319px 41px 107px;
+    border-bottom: none;
+    margin: 0 auto;
+  }
+
+  .video__title {
+    font-size: 20px;
+  }
+
+  .video__block {
+    padding: 0 47px 46px 40px;
+    border-top: none;
+  }
+
+  .video__text {
+    font-size: @font-size-base;
+    line-height: 30px;
+  }
+
+  .video__button {
+    margin-top: 36px;
+    max-width: 584px;
+  }
+}
+
+@media @desktop {
+  .video {
+    padding-bottom: 105px;
+  }
+
+  .video__wrapper {
+    position: relative;
+  }
+
+  .video__source {
+    position: absolute;
+    // top: 0;
+    left: 50;
+    width: 682px;
+    height: 455px;
+  }
+
+  .video__header {
+    padding: 0;
+    padding-top: 100px;
+    margin-left: 761px;
+    margin-bottom: 30px;
+    width: 148px;
+    border: none;
+  }
+
+  .video__block {
+    padding: 0;
+    padding-bottom: 60px;
+    width: 230px;
+    margin-left: 761px;
+    border: none;
+  }
+
+  .video__text {
+    margin-bottom: 46px;
+  }
 }
