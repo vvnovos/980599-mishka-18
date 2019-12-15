@@ -14,6 +14,9 @@
 }
 
 .card-product {
+  width: 100%;
+  min-width: 260px;
+
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
@@ -27,7 +30,6 @@
   border: 1px solid #ececec;
   box-sizing: border-box;
   padding: 23px 34px 26px 28px;
-  width: 260px;
 }
 
 .card-product__description {
@@ -48,6 +50,8 @@
 
 .card-product__image {
   display: block;
+  width: 100%;
+  min-width: 260px;
 }
 
 .card-product__title {
@@ -94,12 +98,14 @@
   .card-product {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+  }
+
+  .card-product__link-image {
+    width: 50%;
+    min-width: 334px;
   }
 
   .card-product__image {
-    width: 50%;
-    min-width: 334px;
     min-height: 334px;
   }
 

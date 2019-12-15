@@ -1,14 +1,28 @@
+// .wrapper {
+//   margin: 0 auto;
+//   padding: 0;
+//   min-width: @mobile-width;
+
+//   @media @tablet {
+//     min-width: @tablet-width;
+//   }
+
+//   @media @desktop {
+//     min-width: @desktop-width;
+//     max-width: @desktop-width;
+//   }
+// }
+
 .wrapper {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0;
-  min-width: @mobile-width;
+  min-width: 320px;
+  max-width: 1150px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media @tablet {
-    min-width: @tablet-width;
-  }
-
-  @media @desktop {
-    min-width: @desktop-width;
-    max-width: @desktop-width;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
