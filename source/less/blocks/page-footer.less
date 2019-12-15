@@ -18,8 +18,18 @@
 }
 
 .page-footer__social {
-  box-sizing: border-box;
-  width: 141px;
+  padding-bottom: 19px;
+  position: relative;
+}
+
+.page-footer__social::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -57px;
+  width: 260px;
+  height: 1px;
+  background-color: #e5e5e5;
 }
 
 @media @tablet {
@@ -50,6 +60,11 @@
   .page-footer__developer {
     width: 33.333%;
     box-sizing: border-box;
+  }
+
+  .page-footer__social::after {
+    width: 0;
+    height: 0;
   }
 }
 

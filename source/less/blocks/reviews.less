@@ -68,20 +68,35 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 
   &--prev {
+    border-right: none;
+  }
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--prev::after {
     background-image: url("../../img/icon-left-arrow.svg");
   }
 
-  &--next {
+  &--next::after {
     background-image: url("../../img/icon-right-arrow.svg");
   }
 
-  &:hover {
+  &:hover::after {
     opacity: 0.6;
   }
 
-  &:active {
+  &:active::after {
     opacity: 0.3;
   }
 }
