@@ -63,7 +63,11 @@
       <ul class="catalog__list">
         <li class="card-product catalog__item">
           <a class="card-product__link-image" href="#">
-            <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+              <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </picture>
           </a>
           <div class="card-product__block">
             <h2 class="card-product__title">
@@ -82,7 +86,11 @@
         </li>
         <li class="card-product catalog__item">
           <a class="card-product__link-image" href="#">
-            <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="190">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+              <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="190">
+            </picture>
           </a>
           <div class="card-product__block">
             <h2 class="card-product__title">
@@ -101,7 +109,11 @@
         </li>
         <li class="card-product catalog__item">
           <a class="card-product__link-image" href="#">
-            <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="190">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+              <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="190">
+            </picture>
           </a>
           <div class="card-product__block">
             <h2 class="card-product__title">
@@ -125,9 +137,18 @@
         <div class="video__header">
           <h2 class="video__title">Процесс производства</h2>
         </div>
-        <picture>
-          <img class="video__source" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесса производства">
-        </picture>
+        <div class="video__content">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+            <img class="video__source" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесса производства">
+          </picture>
+          <a class="video__play-link" href="#">
+            <svg class="video__play-image" width="100.68" height="76.89">
+              <use xlink:href="img/svg/sprite.svg#video-play"></use>
+            </svg>
+          </a>
+        </div>
         <div class="video__block">
           <p class="video__text">По просьбе наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
           <a class="video__button button" href="form.html">Сделать заказ</a>
