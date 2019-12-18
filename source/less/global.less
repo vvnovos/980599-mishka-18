@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +16,7 @@ body {
   color: @font-color-text;
   min-width: @mobile-width;
   position: relative;
+  height: 100%;
 }
 
 a {
@@ -18,4 +26,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  outline: 1px solid red;
 }
