@@ -4,16 +4,18 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  vertical-align: middle;
-}
-
-.social__list {
-  width: 141px;
+  width: 174px;
 }
 
 .social__image {
   vertical-align: middle;
+}
+
+.social__item {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  padding: 3px 0;
 }
 
 .social__link {
@@ -31,14 +33,6 @@
 
 @media @tablet {
   .social__list {
-    padding-left: 42px;
-    padding-right: 42px;
-  }
-}
-
-@media @desktop {
-  .social__list {
-    padding-left: 121px;
-    padding-right: 121px;
+    margin: 0 auto;
   }
 }
