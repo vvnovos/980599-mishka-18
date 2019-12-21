@@ -31,10 +31,15 @@
     border-radius: 50%;
     border: 2px solid #444444;
     margin-right: 22px;
+    box-sizing: content-box;
   }
 }
 
 .radio-list__label:hover::before {
+  border-color: #62d1ba;
+}
+
+.radio-list__input:focus + .radio-list__label::before {
   border-color: #62d1ba;
 }
 

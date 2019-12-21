@@ -11,19 +11,39 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  padding: 17px 17px 89px;
+  padding: 17px;
+  height: 142px;
   border: solid 2px #444444;
   cursor: pointer;
   resize: none;
 
   &:hover,
+  &:focus,
   &:active {
+    outline: none;
     border-color: #62d1ba;
   }
 }
 
 .proposition-list__label {
   margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: @font-color-legend;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    margin-left: 25px;
+    height: 1px;
+    flex-grow: 1;
+    background-color: #63d1bb;
+  }
 }
 
 @media @tablet {
@@ -41,6 +61,12 @@
   .proposition-list__label {
     margin-bottom: 0;
     padding-top: 17px;
+    max-width: 165px;
+    align-items: stretch;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
@@ -53,5 +79,9 @@
   .proposition-list__input {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  .proposition-list__label {
+    max-width: 114px;
   }
 }
