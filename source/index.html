@@ -90,7 +90,11 @@
             <td class="product__value">15 см</td>
           </tr>
         </table>
-        <img class="product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+          <img class="product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+        </picture>
         <b class="product__price">Цена: 990 руб.</b>
         <a class="button product__button" href="#">Заказать</a>
       </div>
