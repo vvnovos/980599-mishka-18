@@ -1,8 +1,12 @@
-
 .nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.nav-list__item {
+  position: relative;
+  z-index: 10;
 }
 
 .nav-list__link {
@@ -30,11 +34,6 @@
   }
 }
 
-.nav-list__item {
-  position: relative;
-  z-index: 10;
-}
-
 .nav-list__link-image {
   position: absolute;
   color: rgba(0, 0, 0, 0.2);
@@ -51,32 +50,34 @@
     padding: 0 50px;
   }
 
+  .nav-list__item {
+    &--cart {
+      order: -1;
+      margin-left: auto;
+    }
+
+    &--search {
+      order: -2;
+      margin-left: 47.1%;
+    }
+  }
+
   .nav-list__link {
     padding: 18px 37px 18px 0;
     border-bottom: none;
     font-size: 15px;
-  }
 
-  .nav-list__item--cart {
-    order: -1;
-    margin-left: auto;
-  }
+    &--cart {
+      font-size: 17px;
+      padding: 32px 0 32px 82px;
+    }
 
-  .nav-list__link--cart {
-    font-size: 17px;
-    padding: 32px 0 32px 82px;
-  }
-
-  .nav-list__item--search {
-    order: -2;
-    margin-left: 47.1%;
-  }
-
-  .nav-list__link--search {
-    font-size: 0;
-    padding: 30px 47px 33px 32px;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
+    &--search {
+      font-size: 0;
+      padding: 30px 47px 33px 32px;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+    }
   }
 }
 
@@ -85,39 +86,39 @@
     border-bottom: 1px solid #ececec;
   }
 
-  .nav-list__item--search {
-    margin-left: auto;
-  }
-
   .nav-list__item {
     order: 0;
     padding: 0;
-  }
 
-  .nav-list__item--cart {
-    margin: 0;
-  }
+    &--search {
+      margin-left: auto;
+    }
 
-  .nav-list__item:first-child {
-    border-right: 1px solid #ececec;
+    &--cart {
+      margin: 0;
+    }
+
+    &:first-child {
+      border-right: 1px solid #ececec;
+    }
   }
 
   .nav-list__link {
     padding: 32px 0 32px 37px;
     font-size: 17px;
     border-bottom: none;
+
+    &--search {
+      font-size: 0;
+      padding: 30px 47px 33px 32px;
+    }
+
+    &--cart {
+      padding-left: 83px;
+    }
   }
 
   .nav-list__item:first-child .nav-list__link {
     padding: 32px 37px 32px 0;
-  }
-
-  .nav-list__link--search {
-    font-size: 0;
-    padding: 30px 47px 33px 32px;
-  }
-
-  .nav-list__link--cart {
-    padding-left: 83px;
   }
 }

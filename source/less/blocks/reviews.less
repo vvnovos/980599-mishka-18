@@ -49,10 +49,6 @@
   margin-bottom: 49px;
 }
 
-.reviews__button {
-  margin-top: 49px;
-}
-
 .reviews__navigation {
   display: flex;
   flex-wrap: wrap;
@@ -90,13 +86,18 @@
     background-image: url("../../img/icon-right-arrow.svg");
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after{
     opacity: 0.6;
   }
 
   &:active::after {
     opacity: 0.3;
   }
+}
+
+.reviews__button {
+  margin-top: 49px;
 }
 
 @media @tablet {
@@ -134,13 +135,6 @@
     max-width: 45px;
   }
 
-  .reviews__button {
-    order: -1;
-    width: 175px;
-    margin-top: 0;
-    margin-right: 0;
-  }
-
   .reviews__link {
     margin: 0;
   }
@@ -154,6 +148,13 @@
 
   .reviews__nav-button {
     border: none;
+  }
+
+  .reviews__button {
+    order: -1;
+    width: 175px;
+    margin-top: 0;
+    margin-right: 0;
   }
 }
 
