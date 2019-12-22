@@ -1,7 +1,6 @@
 .button {
   display: block;
   font: inherit;
-  box-sizing: border-box;
   padding: 14px 0;
   width: 100%;
   max-width: 320px;
@@ -16,15 +15,11 @@
   cursor: pointer;
   margin: 0 auto;
 
-  &:hover {
-    color: #ffffff;
-    background-color: #444444;
-  }
-
+  &:hover,
   &:focus {
-    outline: none;
     color: #ffffff;
     background-color: #444444;
+    outline: none;
   }
 
   &:active {
