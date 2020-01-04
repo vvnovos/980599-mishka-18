@@ -15,7 +15,7 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: @font-color-text;
+  color: @default;
 }
 
 .contacts__mail {
@@ -28,18 +28,18 @@
 }
 
 .contacts__link {
-  color: @font-color-text;
+  color: @default;
   margin-left: 28px;
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid @border-accent;
 
   &:hover {
-    color: #46c1ae;
-    border-bottom-color: #46c1ae;
+    color: @accent-color--secondary;
+    border-bottom-color: @accent-color--secondary;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
-    border-bottom-color: rgba(70, 193, 174, 0.3);
+    color: @contacts-border-action;
+    border-bottom-color: @contacts-border-action;
   }
 }
 

@@ -1,5 +1,5 @@
 .starting {
-  background-color: #fafafa;
+  background-color: @lighten;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -15%;
@@ -28,18 +28,18 @@
 
 .starting__item {
   &--decor {
-    background-color: @green-main;
+    background-color: @primary-color;
   }
 
   &--toys {
-    background-color: @main-toys-bg;
+    background-color: @secondary-color;
   }
 }
 
 .starting__link {
   font-size: 19px;
   font-weight: 700;
-  color: @font-color-starting;
+  color: @starting-promo;
   padding: 26px 30px 29px;
   display: block;
   position: relative;
@@ -60,13 +60,13 @@
   }
 
   &--decor {
-    background-color: @green-main;
+    background-color: @primary-color;
 
     &:hover {
-      background-color: #59d5bc;
+      background-color: @accent-color--primary;
 
       &::before {
-        background-color: #59d5bc;
+        background-color: @accent-color--primary;
       }
     }
 
@@ -79,13 +79,13 @@
   }
 
   &--toys {
-    background-color: @main-toys-bg;
+    background-color: @secondary-color;
 
     &:hover {
-      background-color: #46c1ae;
+      background-color: @accent-color--secondary;
 
       &::before {
-        background-color: #46c1ae;
+        background-color: @accent-color--secondary;
       }
     }
 
@@ -114,7 +114,7 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: @starting-active-toys;
 
     &::after {
       opacity: 0.3;

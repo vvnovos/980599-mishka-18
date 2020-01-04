@@ -4,22 +4,22 @@
 }
 
 .card-product__image {
-  background-color: #cacecd;
+  background-color: @lighten;
   display: block;
   width: 100%;
   min-width: 260px;
 }
 
 .card-product__block {
-  border: 1px solid #ececec;
+  border: 1px solid @border-primary;
   padding: 23px 34px 26px 28px;
 
   &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 @action--lightly;
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 @action--lightly;
   }
 }
 
@@ -31,15 +31,15 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: @font-color-base;
+  color: @base;
   cursor: pointer;
 
   &:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: @action--light;
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: @action--lighten;
   }
 }
 
@@ -47,7 +47,7 @@
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
-  color: @font-color-text;
+  color: @default;
   margin-top: 5px;
   margin-bottom: 24px;
 }
@@ -57,21 +57,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 20px;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid @border-primary;
 }
 
 .card-product__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
-  color: @font-color-base;
+  color: @base;
 }
 
 .card-product__button {
-  color: rgba(0, 0, 0, 0.2);
+  color: @action--lightest;
 
   &:hover {
-    color: @green-main;
+    color: @primary-color;
     cursor: pointer;
   }
 

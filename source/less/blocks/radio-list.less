@@ -24,7 +24,7 @@
     content: "";
     min-width: 16px;
     height: 16px;
-    background-color: #62d1ba;
+    background-color: @border-accent;
     border-radius: 50%;
     position: absolute;
     left: 20px;
@@ -36,7 +36,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: @font-color-base;
+  color: @base;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -47,17 +47,17 @@
     min-width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 2px solid #444444;
+    border: 2px solid @default;
     margin-right: 22px;
     box-sizing: content-box;
   }
 
   &:hover::before {
-    border-color: #62d1ba;
+    border-color: @border-accent;
   }
 
   &:active::before {
-    border-color: rgba(68, 68, 68, 0.3);
+    border-color: @border-action;
   }
 }
 

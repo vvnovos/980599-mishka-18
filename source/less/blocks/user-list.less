@@ -9,32 +9,32 @@
 }
 
 .user-list__link {
-  color: @font-color-base;
+  color: @base;
   font-weight: 700;
   z-index: 10;
 
   &:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: @action--light;
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: @action--lighten;
   }
 }
 
 .user-list__text {
-    color: @font-color-text;
+    color: @default;
     font-weight: 400;
     margin: 0;
 }
 
 @media @tablet {
   .user-list {
-    background-color: #F1F1F1;
+    background-color: @lighten;
     padding: 0 50px;
 
     &--index {
-      background-color: #F9F9F9;
+      background-color: @lightest;
     }
   }
 

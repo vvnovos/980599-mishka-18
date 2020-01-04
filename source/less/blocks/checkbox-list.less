@@ -16,7 +16,7 @@
 
 .checkbox-list__input {
   &:focus + .checkbox-list__label::before {
-    border-color: #62d1ba;
+    border-color: @border-accent;
   }
 
   &:checked + .checkbox-list__label::after {
@@ -24,8 +24,8 @@
     position: absolute;
     width: 20px;
     height: 9px;
-    border-left: solid 2px #444444;
-    border-bottom: solid 2px #444444;
+    border-left: solid 2px @default;
+    border-bottom: solid 2px @default;
     left: 9px;
     top: 15px;
     transform: rotate(-45deg);
@@ -37,7 +37,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: @font-color-base;
+  color: @base;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -47,17 +47,17 @@
     content: "";
     min-width: 38px;
     height: 37px;
-    border: solid 2px #444444;
+    border: solid 2px @default;
     margin-right: 22px;
     box-sizing: content-box;
   }
 
   &:hover::before {
-    border-color: #62d1ba;
+    border-color: @border-accent;
   }
 
   &:active::before {
-    border-color: rgba(68, 68, 68, 0.3);
+    border-color: @border-action;
   }
 }
 

@@ -28,18 +28,18 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: @font-color-legend;
+  color: @primary-color;
   text-transform: uppercase;
   margin-bottom: 22px;
 }
 
 .product__presentation {
-  color: @font-color-text;
+  color: @default;
 }
 
 .product__list {
   line-height: 20px;
-  color: @font-color-text;
+  color: @default;
   border-collapse: collapse;
   margin-bottom: 28px;
   width: 100%;
@@ -48,11 +48,11 @@
 .product__field {
   width: 38%;
   padding: 10px 0;
-  box-shadow: inset 0 -1px 0 0 #e5e5e5;
+  box-shadow: inset 0 -1px 0 0 @product-border;
 }
 
 .product__value {
-  box-shadow: inset 0 -1px 0 0 #e5e5e5;
+  box-shadow: inset 0 -1px 0 0 @product-border;
 }
 
 .product__image {
@@ -63,7 +63,7 @@
 
 .product__price {
   font-size: 17px;
-  color: @font-color-text;
+  color: @default;
   display: block;
   text-align: center;
   margin: 25px 0 24px;

@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: @header-footer-bg;
+  background-color: @lighten;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -13,21 +13,21 @@
 
 .page-footer__logo-image {
   display: block;
-  color: @black;
+  color: @base;
 }
 
 .page-footer__social {
-  padding-bottom: 53px;
+  padding-bottom: 50px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 100%;
-    left: -57px;
+    top: 55px;
+    left: -37px;
     width: 260px;
     height: 1px;
-    background-color: #e5e5e5;
+    background-color: @border-primary;
   }
 }
 
@@ -45,7 +45,7 @@
     }
 
     &[href]:hover .page-footer__logo-image {
-      color: #46c1ae;
+      color: @accent-color--secondary;
     }
 
     &[href]:active .page-footer__logo-image {

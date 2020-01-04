@@ -4,11 +4,11 @@
   padding: 14px 0;
   width: 100%;
   max-width: 320px;
-  border: solid 2px @font-color-text;
+  border: solid 2px @grey;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  color: @font-color-text;
+  color: @grey;
   text-align: center;
   text-transform: uppercase;
   background-color: @white;
@@ -17,12 +17,12 @@
 
   &:hover,
   &:focus {
-    color: #ffffff;
-    background-color: #444444;
+    color: @white;
+    background-color: @grey;
     outline: none;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: @action--lighten;
   }
 }

@@ -5,9 +5,9 @@
   margin: 0 auto;
   flex-direction: column;
   padding: 27px 30px 42px;
-  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
-  border: solid 1px #c6c6c6;
-  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 @modal-shadow;
+  border: solid 1px @modal-border;
+  background-color: @modal-bg;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -19,7 +19,7 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
-  color: @font-color-base;
+  color: @base;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: @font-color-text;
+  color: @default;
   text-align: center;
   margin: 13px 0 24px;
 }
@@ -47,42 +47,42 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  color: @font-color-text;
+  color: @default;
   text-transform: uppercase;
   cursor: pointer;
   width: 78px;
   height: 48px;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgba(68, 68, 68, 0.1);
+  border: 2px solid @modal-border-label;
 
   &:hover {
-    border-color: rgba(68, 68, 68, 0.3);
+    border-color: @border-action;
   }
 
   &:active {
-    border-color: @green-main;
+    border-color: @primary-color;
   }
 }
 
 .modal-show__input:focus + .modal-show__label {
-  border-color: rgba(68, 68, 68, 0.3);
+  border-color: @border-action;
 }
 
 .modal-show__input:checked + .modal-show__label {
-  border-color: @green-main;
+  border-color: @primary-color;
 }
 
 .modal-show__button {
   min-width: 100%;
-  color: @font-color-starting;
-  background-color: @green-main;
+  color: @modal-button;
+  background-color: @primary-color;
   line-height: 16px;
   border: none;
 
   &:hover {
-    color: @font-color-starting;
-    background-color: @green-main;
+    color: @modal-button;
+    background-color: @primary-color;
   }
 }
 

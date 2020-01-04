@@ -10,7 +10,7 @@
   font-size: 17px;
   line-height: 17px;
   font-weight: 700;
-  color: @font-color-legend;
+  color: @primary-color;
   text-transform: uppercase;
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@
     margin-left: 25px;
     height: 1px;
     flex-grow: 1;
-    background-color: #63d1bb;
+    background-color: @primary-color;
   }
 }
 
@@ -31,7 +31,7 @@
   font-weight: 400;
   padding: 17px;
   height: 142px;
-  border: solid 2px #444444;
+  border: solid 2px @default;
   cursor: pointer;
   resize: none;
 
@@ -39,11 +39,11 @@
   &:focus,
   &:active {
     outline: none;
-    border-color: #62d1ba;
+    border-color: @border-accent;
   }
 
   &::placeholder {
-    color: rgba(68, 68, 68, 0.3);
+    color: @border-action;
   }
 }
 
@@ -83,6 +83,6 @@
 
   .proposition-list__input {
     font-size: 19px;
-    line-height: 18px;
+    line-height: 19px;
   }
 }
