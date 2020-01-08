@@ -39,6 +39,12 @@
   background-color: transparent;
   background-image: url("../../img/icon-menu-open.svg");
   background-repeat: no-repeat;
+
+  &--closed {
+    background-image: url("../../img/icon-menu-close.svg");
+    width: 20.5px;
+    height: 20.5px;
+  }
 }
 
 @media @tablet {
@@ -61,7 +67,8 @@
     height: 46px;
   }
 
-  .page-header__nav-button {
+  .page-header__nav-button,
+  .page-header__nav-button--closed {
     display: none;
   }
 }
