@@ -6,7 +6,7 @@ navMenu.classList.add("visually-hidden");
 buttonMenu.classList.remove("visually-hidden");
 buttonMenu.classList.remove("page-header__nav-button--closed");
 
-buttonMenu.addEventListener("click", function(evt){
+buttonMenu.addEventListener("click", function(evt) {
 navMenu.classList.toggle("visually-hidden");
 buttonMenu.classList.toggle("page-header__nav-button--closed");
 });
@@ -14,7 +14,7 @@ buttonMenu.classList.toggle("page-header__nav-button--closed");
 mediaqueryresponse(mql);
 mql.addListener(mediaqueryresponse);
 
-function mediaqueryresponse(mql){
+function mediaqueryresponse(mql) {
   if (mql.matches){
     navMenu.classList.remove("visually-hidden");
   }else{
