@@ -90,6 +90,7 @@
   .product__title {
     font-size: 43px;
     line-height: 50px;
+    color: @base;
     margin: 0;
   }
 
@@ -141,6 +142,11 @@
 }
 
 @media @desktop {
+  .product {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
   .product::after {
     width: 1050px;
     transform: translateX(0);

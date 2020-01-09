@@ -8,10 +8,21 @@
   min-width: 320px;
 }
 
+.map__marker {
+  position: absolute;
+  vertical-align: middle;
+  left: 138px;
+  top: 49%;
+}
+
 @media @tablet {
   .map {
     background-image: url("../img/map-tablet@1x.jpg");
     margin: 50px 0;
+  }
+
+  .map__marker {
+    left: 362px;
   }
 }
 
@@ -24,5 +35,10 @@
     z-index: -1;
     right: 50px;
     bottom: 105px;
+  }
+
+  .map__marker {
+    left: 240px;
+    top: 31%;
   }
 }
