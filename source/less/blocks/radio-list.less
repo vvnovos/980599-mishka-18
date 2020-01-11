@@ -7,7 +7,8 @@
 
 .radio-list__item {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -28,18 +29,24 @@
     position: absolute;
     left: 20px;
     transform: translateX(-50%);
+    top: 12px;
   }
 }
 
 .radio-list__label {
   font-size: 17px;
-  line-height: 18px;
+  line-height: 17px;
   font-weight: 700;
   color: @base;
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
+
+  &--interior {
+    align-items: flex-start;
+    height: 43px;
+  }
 
   &::before {
     content: "";
@@ -58,6 +65,10 @@
   &:active::before {
     border-color: @border-action;
   }
+}
+
+.radio-list__label-text {
+  align-self: flex-end;
 }
 
 @media @tablet {

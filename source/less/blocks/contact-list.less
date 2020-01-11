@@ -1,3 +1,8 @@
+.contact-list {
+  margin: 0;
+
+}
+
 .contact-list__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -9,8 +14,8 @@
 
 .contact-list__image {
   position: absolute;
-  right: 8px;
-  top: 31px;
+  right: 4px;
+  top: 33px;
   opacity: 0.2;
 }
 
@@ -23,6 +28,10 @@
   box-shadow: inset 0 -2px 0 0 @base;
   margin-bottom: 34px;
   cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover,
   &:focus,
