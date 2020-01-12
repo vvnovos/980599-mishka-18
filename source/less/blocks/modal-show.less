@@ -2,6 +2,7 @@
   display: flex;
   min-width: 320px;
   max-width: 100%;
+  height: 336px;
   margin: 0 auto;
   flex-direction: column;
   padding: 27px 30px 42px;
@@ -13,6 +14,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 51;
+  box-sizing: border-box;
 }
 
 .modal-show__title {
@@ -23,6 +25,7 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  margin: 0 55px;
 }
 
 .modal-show__option {
@@ -34,7 +37,7 @@
 .modal-show__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 31px;
+  margin: 0 0 34px;
   display: flex;
   justify-content: space-between;
 }
@@ -46,8 +49,8 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  width: 78px;
-  height: 48px;
+  width: 80px;
+  height: 50px;
   justify-content: center;
   align-items: center;
   border: 2px solid @modal-border-label;
@@ -75,6 +78,7 @@
   background-color: @primary-color;
   line-height: 17px;
   border: none;
+  padding: 17px 0;
 
   &:hover {
     color: @modal-button;
@@ -89,21 +93,28 @@
 @media @tablet {
   .modal-show {
     width: 566px;
-    padding: 51px 104px 46px;
+    padding: 32px 103px 76px 107px;
     margin: 0 auto;
   }
 
   .modal-show__title {
     font-size: 30px;
     line-height: 57px;
+    margin: 0;
   }
 
   .modal-show__option {
     font-size: 17px;
+    margin-top: 14px;
+    margin-bottom: 23px;
+  }
+
+  .modal-show__list {
+    margin-bottom: 33px;
   }
 
   .modal-show__label {
-    width: 110px;
+    width: 112px;
     height: 52px;
   }
 
