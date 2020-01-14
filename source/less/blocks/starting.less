@@ -131,7 +131,6 @@
 @media @tablet {
   .starting {
     background-image: url("../../img/hero-tablet@1x.jpg");
-    background-repeat: no-repeat;
     background-position: center -60px;
     min-height: 685px;
     position: relative;
@@ -143,7 +142,7 @@
       max-height: 34px;
       width: 100%;
       background-image: url("../../img/bg-zigzag-fill.svg");
-      background-size: cover;
+      background-size: contain;
       position: absolute;
       bottom: -15px;
       left: 0;
@@ -181,12 +180,13 @@
 @media @desktop {
   .starting {
     background-image: url("../../img/hero-desktop@1x.jpg");
-    background-repeat: no-repeat;
 
     &::after {
       height: 37px;
-      bottom: -17px;
-      left: 27px;
+      max-height: 37px;
+      bottom: -19px;
+      background-size: cover;
+      left: -17px;
     }
   }
 
@@ -194,16 +194,10 @@
     font-size: 53px;
     line-height: 57px;
     padding: 0 220px;
-    margin-top: 5px;
   }
 
   .starting__list {
     width: 1150px;
     margin: 0 auto;
-  }
-
-  .starting__link {
-    font-size: 20px;
-    line-height: 30px;
   }
 }
