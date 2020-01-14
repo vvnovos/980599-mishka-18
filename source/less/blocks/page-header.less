@@ -74,7 +74,27 @@
 }
 
 @media @desktop {
+  .page-header {
+
+    &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    top: 88px;
+    z-index: -10;
+    background-color: @lighten;
+    }
+
+    &--index {
+      &::after {
+        background-color: @lightest;
+      }
+    }
+  }
+
   .page-header__logo-wrapper {
+    top: 10px;
     left: 50%;
     transform: translate(-50%);
   }

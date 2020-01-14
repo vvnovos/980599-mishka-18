@@ -1,5 +1,8 @@
 .page-footer {
   background-color: @lighten;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -32,9 +35,9 @@
 }
 
 @media @tablet {
-  .page-footer {
+  .page-footer__wrapper {
     flex-direction: row;
-    padding: 51px 55px 58px;
+    padding: 55px 50px 58px;
   }
 
   .page-footer__logo {
@@ -70,11 +73,9 @@
 }
 
 @media @desktop {
-  .page-footer__logo {
-    text-align: left;
-  }
-
-  .page-footer__developer {
-    text-align: right;
+  .page-footer__wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-top: 50px;
   }
 }

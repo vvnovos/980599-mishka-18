@@ -108,7 +108,7 @@
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
-    padding: 77px 50px 121px;
+    padding: 79px 50px 121px;
 
     &::after {
       transform: translateX(-50px);
@@ -142,7 +142,7 @@
 
   .reviews__navigation {
     position: absolute;
-    right: 50px;
+    right: 30px;
     bottom: 104px;
     width: 175px;
   }
@@ -161,9 +161,10 @@
 
 @media @desktop {
   .reviews {
-    padding-left: 224px;
-    padding-right: 50px;
+    padding: 73px 50px 160px 225px;
     background-position: 50px 0;
+    max-width: 1150px;
+    margin: 0 auto;
 
     &::after {
       transform: translateX(-174px);
@@ -179,7 +180,20 @@
 
   .reviews__quote {
     margin-bottom: 38px;
-    padding-right: 106px;
     max-width: 770px;
+  }
+
+  .reviews__author {
+    font-size: 17px;
+  }
+
+  .reviews__navigation {
+    right: 30px;
+    bottom: 145px;
+  }
+
+  .reviews__button {
+    margin-top: 10px;
+    font-size: 17px;
   }
 }

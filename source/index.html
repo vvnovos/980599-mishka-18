@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-  <header class="page-header">
+  <header class="page-header page-header--index">
     <div class="page-header__logo-wrapper">
       <a class="page-header__logo">
         <picture>
@@ -112,7 +112,7 @@
     <section class="reviews">
       <h2 class="reviews__title title">Отзывы</h2>
       <blockquote class="reviews__item">
-        <p class="reviews__quote">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков.
+        <p class="reviews__quote">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков.
         </p>
         <cite class="reviews__author">Анастасия Красильникова</cite>
         <a class="reviews__link" href="mailto:@misssssiskras">@misssssiskras</a>
@@ -135,49 +135,52 @@
             <use xlink:href="img/svg/sprite.svg#map-marker"></use>
           </svg>
         </div>
+        <div class="map__interactive" id="map"></div>
       </div>
       <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo" aria-label="Мишка">
-      <svg class="page-footer__logo-image" width="101.6" height="34.05">
-        <use xlink:href="img/svg/sprite.svg#footer-logo"></use>
-      </svg>
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">Instagram
-            <svg class="social__image" width="21.77" height="21.33">
-              <use xlink:href="img/svg/sprite.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">Facebook
-            <svg class="social__image" width="14.96" height="27.72">
-              <use xlink:href="img/svg/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">Twitter
-            <svg class="social__image" width="23.49" height="20.17">
-              <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <p class="page-footer__developer developer-item">
-      <a class="developer-item__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="developer-item__text">Разработано</span>
-        <svg class="developer-item__logo-image" width="26.94" height="34.09">
-          <use xlink:href="img/svg/sprite.svg#logo-developer"></use>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" aria-label="Мишка">
+        <svg class="page-footer__logo-image" width="101.6" height="34.05">
+          <use xlink:href="img/svg/sprite.svg#footer-logo"></use>
         </svg>
       </a>
-    </p>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">Instagram
+              <svg class="social__image" width="21.77" height="21.33">
+                <use xlink:href="img/svg/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Facebook
+              <svg class="social__image" width="14.96" height="27.72">
+                <use xlink:href="img/svg/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">Twitter
+              <svg class="social__image" width="23.49" height="20.17">
+                <use xlink:href="img/svg/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-footer__developer developer-item">
+        <a class="developer-item__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="developer-item__text">Разработано</span>
+          <svg class="developer-item__logo-image" width="26.94" height="34.09">
+            <use xlink:href="img/svg/sprite.svg#logo-developer"></use>
+          </svg>
+        </a>
+      </p>
+    </div>
   </footer>
   <div class="modal-overlay modal-overlay__closed">
     <div class="modal-show">
@@ -204,5 +207,7 @@
   </div>
   <script src="js/modules/toggle-nav.js"></script>
   <script src="js/modules/modal-overlay.js"></script>
+  <script src="js/modules/yandex-map.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
 </body>
 </html>
