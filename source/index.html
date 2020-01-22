@@ -142,7 +142,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" aria-label="Мишка">
+      <a class="page-footer__logo" aria-label="Логотип подвала сайта">
         <svg class="page-footer__logo-image" width="101.6" height="34.05">
           <use xlink:href="img/svg/sprite.svg#footer-logo"></use>
         </svg>
@@ -182,11 +182,12 @@
       </p>
     </div>
   </footer>
-  <div class="modal-overlay modal-overlay__closed">
-    <div class="modal-show">
-      <h2 class="modal-show__title">Добавить в корзину</h2>
-      <p class="modal-show__option">Выберите размер:</p>
-      <form action="https://echo.htmlacademy.ru" method="get">
+  <div class="modal-overlay modal-overlay--closed">
+    <div class="modal-overlay__form">
+      <form class="modal-show" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="modal-show__title">Добавить в корзину</h2>
+        <p class="modal-show__option">Выберите размер:</p>
+
         <ul class="modal-show__list">
           <li class="modal-show__item">
             <input class="modal-show__input visually-hidden" type="radio" name="size" id="basket-small" value="size-s" checked>

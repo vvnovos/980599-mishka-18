@@ -7,8 +7,16 @@
   background-color: @modal-overlay-bg;
   z-index: 50;
   display: block;
+
+  &--closed {
+    display: none;
+  }
 }
 
-.modal-overlay__closed {
-  display: none;
+.modal-overlay__form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 51;
 }
