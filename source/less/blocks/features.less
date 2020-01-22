@@ -1,14 +1,13 @@
 .features {
-  box-sizing: border-box;
-  padding: 26px 30px 36px;
+  padding: 26px 30px;
 }
 
 .features__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 33px;
+  color: @base;
+  margin: 8px 0 33px;
 }
 
 .features__list {
@@ -21,8 +20,8 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  padding-top: 54px;
-  padding-bottom: 29px;
+  color: @base;
+  padding: 54px 0 29px;
   position: relative;
 
   &::before {
@@ -105,13 +104,13 @@
 
 @media @tablet {
   .features {
-    padding: 59px 50px 24px;
+    padding: 62px 50px 24px;
   }
 
   .features__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 47px;
+    margin-bottom: 48px;
   }
 
   .features__list {
@@ -122,23 +121,21 @@
   .features__item {
     font-size: 20px;
     line-height: 22px;
-    padding-right: 0;
     width: 50%;
     margin-bottom: 28px;
-    box-sizing: border-box;
 
     &--flower {
       order: -1;
-      padding-right: 129px;
+      padding-right: 120px;
     }
 
     &--ball {
-      padding-right: 87px;
+      padding-right: 70px;
     }
 
     &--money {
       order: 1;
-      padding-right: 98px;
+      padding-right: 90px;
     }
 
     &--rocket {
@@ -147,7 +144,7 @@
 
     &--heart {
       order: 3;
-      padding-right: 122px;
+      padding-right: 110px;
     }
 
     &--gift {
@@ -159,12 +156,14 @@
 
 @media @desktop {
   .features {
-    padding: 70px 250px 30px 229px;
+    padding: 70px 220px 30px 226px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .features__title {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 47px;
+    margin-left: -6px;
   }
 }

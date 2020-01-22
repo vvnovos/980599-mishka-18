@@ -1,0 +1,44 @@
+.main-title {
+  background-color: @lighten;
+  padding: 72px 0 74px;
+  text-align: center;
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @base;
+}
+
+@media @tablet {
+  .main-title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 36px 0 82px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 23px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      position: absolute;
+      bottom: -12px;
+      left: -5px;
+    }
+  }
+}
+
+@media @desktop {
+  .main-title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 105px;
+
+    &::after {
+      height: 34px;
+      bottom: -12px;
+      left: -5px;
+    }
+  }
+}

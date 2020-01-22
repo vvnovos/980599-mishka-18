@@ -1,21 +1,38 @@
 .text-list {
   list-style: none;
   padding: 0;
+  margin-top: 27px;
+}
+
+.text-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .text-list__input {
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 17px 0;
   border: none;
-  box-shadow: inset 0 -2px 0 0 #000000;
+  box-shadow: inset 0 -2px 0 0 @base;
   cursor: pointer;
 
   &:hover,
+  &:focus,
   &:active {
-    box-shadow: inset 0 -2px 0 0 #62d1ba;
+    outline: none;
+    box-shadow: inset 0 -2px 0 0 @border-accent;
+  }
+
+  &::placeholder {
+    color: @border-action;
   }
 }
 
@@ -23,28 +40,16 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: @font-color-base;
+  color: @base;
   order: -1;
   cursor: pointer;
-}
-
-.text-list__item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-bottom: 24px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media @tablet {
   .text-list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 25px 0 54px;
   }
 
   .text-list__item {
@@ -53,17 +58,27 @@
     width: 100%;
   }
 
+  .text-list__input {
+    font-size: 19px;
+    line-height: 19px;
+    padding: 13px 0 13px 17px;
+    flex-grow: 1;
+  }
+
   .text-list__label {
     font-size: 19px;
+    line-height: 19px;
     padding-right: 26px;
     align-self: center;
   }
+}
 
-  .text-list__input {
-    font-size: 19px;
-    padding-left: 17px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    flex-grow: 1;
+@media @desktop {
+  .text-list {
+    padding-right: 176px;
+  }
+
+  .text-list__item {
+    margin-bottom: 25px;
   }
 }

@@ -1,14 +1,6 @@
-.developer-item__text {
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: 700;
-  padding: 0;
-  color: @black;
-}
 
-.developer-item__logo-image {
-  margin-left: 20px;
-  color: @green-main;
+.developer-item {
+  margin: 0;
 }
 
 .developer-item__logo {
@@ -17,10 +9,24 @@
   justify-content: flex-end;
 
   &:hover .developer-item__logo-image {
-    color: #46c1ae;
+    color: @accent-color--secondary;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.developer-item__text {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 700;
+  padding: 0;
+  color: @base;
+  margin-right: 10px;
+}
+
+.developer-item__logo-image {
+  margin-left: 20px;
+  color: @primary-color;
 }

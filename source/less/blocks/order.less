@@ -1,6 +1,5 @@
 .order {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
 }
 
 .order__block {
@@ -11,9 +10,9 @@
 
 .order__title {
   font-size: 17px;
-  line-height: 16px;
+  line-height: 17px;
   font-weight: 700;
-  color: @font-color-legend;
+  color: @primary-color;
   text-transform: uppercase;
   width: 100%;
   margin-top: 0;
@@ -25,52 +24,43 @@
     margin-left: 25px;
     height: 1px;
     flex-grow: 1;
-    background-color: #63d1bb;
+    background-color: @primary-color;
   }
 }
 
 .order__list {
-  margin-top: 27px;
-  margin-bottom: 27px;
+  margin: 24px 0 31px;
 }
 
 .order__remark {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
-  color: @font-color-text;
   display: block;
-  margin-top: 19px;
-  margin-bottom: 29px;
+  margin: 19px 0 29px;
 }
 
 .order__button {
   width: 100%;
+  font-size: 17px;
 }
 
 @media @tablet {
   .order {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .order__wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
+    padding: 0;
   }
 
   .order__block--grey,
   .order__list--grey {
-    background-color: #f1f1f1;
+    background-color: @lighten;
   }
 
-  .order__title-text::after {
-    display: none;
+  .order__wrapper {
+    padding: 0 50px;
+    display: flex;
   }
 
   .order__title {
-    max-width: 165px;
+    max-width: 167px;
     padding-top: 65px;
     align-items: stretch;
 
@@ -79,8 +69,8 @@
     }
   }
 
-  .order__title.proposition-list__label {
-    padding-top: 0;
+  .order__title-text::after {
+    display: none;
   }
 
   .order__list {
@@ -91,30 +81,31 @@
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
   }
 
   .order__remark {
+    font-size: 17px;
+    line-height: 30px;
     margin: 0;
     padding: 0;
     order: 1;
+    max-width: 100%;
   }
 
   .order__button {
     width: 230px;
-    line-height: 16px;
+    line-height: 17px;
     margin: 0;
   }
 }
 
 @media @desktop {
   .order__wrapper {
-    padding-right: 225px;
     padding-left: 112px;
-  }
-
-  .order__wrapper--color {
-    padding-right: 170px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .order__title {
@@ -123,6 +114,8 @@
 
   .order__remark-button {
     padding: 0 225px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .order__remark {

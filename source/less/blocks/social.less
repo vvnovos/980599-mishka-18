@@ -4,20 +4,23 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  vertical-align: middle;
+  align-items: flex-end;
+  width: 180px;
 }
 
-.social__image {
-  vertical-align: middle;
+.social__item {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  padding: 3px 0;
 }
 
 .social__link {
   font-size: 0;
-  color: @black;
+  color: @base;
 
   &:hover {
-    color: #46c1ae;
+    color: @accent-color--secondary;
   }
 
   &:active {
@@ -25,16 +28,12 @@
   }
 }
 
-@media @tablet {
-  .social__list {
-    padding-left: 42px;
-    padding-right: 42px;
-  }
+.social__image {
+  vertical-align: top;
 }
 
-@media @desktop {
+@media @tablet {
   .social__list {
-    padding-left: 121px;
-    padding-right: 121px;
+    margin: 0 auto;
   }
 }

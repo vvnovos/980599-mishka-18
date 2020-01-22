@@ -1,27 +1,28 @@
 .button {
   display: block;
   font: inherit;
-  box-sizing: border-box;
   padding: 14px 0;
   width: 100%;
   max-width: 320px;
-  border: solid 2px @font-color-text;
-  font-size: 17px;
+  border: solid 2px @grey;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: @font-color-text;
+  color: @grey;
   text-align: center;
   text-transform: uppercase;
   background-color: @white;
   cursor: pointer;
   margin: 0 auto;
 
-  &:hover {
-    color: #ffffff;
-    background-color: #444444;
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @grey;
+    outline: none;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: @action--button;
   }
 }
