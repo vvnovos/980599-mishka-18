@@ -1,4 +1,4 @@
-/*stylelint-disable*/
+/* stylelint-disable */
 
 /*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
 
