@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мишка: главная</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
@@ -90,9 +92,12 @@
           </tr>
         </table>
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-          <img class="product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <source type="image/webp" srcset="img/webp/triple-set-mobile@2x.webp 2x">
+          <img class="product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
         </picture>
         <b class="product__price">Цена: 990 руб.</b>
         <a class="product__button button button-modal-js" href="#">Заказать</a>
@@ -206,9 +211,12 @@
       </form>
     </div>
   </div>
+  <script src="js/modules/svg4everybody_1.js"></script>
+  <script>svg4everybody();</script>
+  <script src="js/modules/picturefill.js"></script>
   <script src="js/modules/toggle-nav.js"></script>
   <script src="js/modules/modal-overlay.js"></script>
   <script src="js/modules/yandex-map.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
-</body>
+  </body>
 </html>
