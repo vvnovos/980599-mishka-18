@@ -50,6 +50,7 @@
     border: solid 2px @default;
     margin-right: 22px;
     box-sizing: content-box;
+    display: block;
   }
 
   &:hover::before {
@@ -66,6 +67,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 0 26px;
+    max-width: 76%; //для IE
   }
 
   .checkbox-list__item {
@@ -100,7 +102,8 @@
 @media @desktop {
   .checkbox-list {
     justify-content: flex-start;
-    min-height: 128px;
+    max-height: 228px; //для IE
+    max-width: 790px; //для IE
   }
 
   .checkbox-list__item {
