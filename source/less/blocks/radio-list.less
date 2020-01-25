@@ -17,7 +17,7 @@
 
 .radio-list__input {
   &:focus + .radio-list__label::before {
-    border-color: @border-accent;
+    border-color: @default;
   }
 
   &:checked + .radio-list__label::after {
@@ -56,6 +56,7 @@
     border: 2px solid @default;
     margin-right: 22px;
     box-sizing: content-box;
+    display: block;
   }
 
   &:hover::before {
@@ -69,6 +70,7 @@
 
 .radio-list__label-text {
   align-self: flex-end;
+  max-width: 200px;
 }
 
 @media @tablet {
@@ -78,10 +80,6 @@
 
   .radio-list__item {
     margin-bottom: 20px;
-  }
-
-  .radio-list__label-text {
-    align-self: center;
   }
 
   .radio-list__input:checked + .radio-list__label::after {
@@ -105,5 +103,10 @@
       height: 50px;
       margin-right: 28px;
     }
+  }
+
+  .radio-list__label-text {
+    align-self: center;
+    max-width: 100%;
   }
 }

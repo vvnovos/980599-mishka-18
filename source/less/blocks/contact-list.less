@@ -8,13 +8,22 @@
   flex-direction: column;
   margin-top: 0;
   padding: 0;
+  // position: relative;
+}
+
+.contact-list__wrapper-input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 0;
   position: relative;
 }
 
 .contact-list__image {
   position: absolute;
-  right: 4px;
-  top: 33px;
+  right: 6px;
+  top: 18px;
   opacity: 0.2;
 }
 
@@ -40,6 +49,7 @@
 
     & + .contact-list__image {
       color: @border-accent;
+      fill: @border-accent; //Для IE
       opacity: 1;
     }
   }
@@ -70,6 +80,10 @@
 }
 
 @media @tablet {
+  .contact-list {
+    padding: 50px 0 26px;
+  }
+
   .contact-list__wrapper {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -77,8 +91,8 @@
     padding: 0 50px;
   }
 
-  .contact-list {
-    padding: 50px 0 26px;
+  .contact-list__wrapper-input {
+    width: 76%;//для IE
   }
 
   .contact-list__input {
@@ -88,7 +102,6 @@
     padding: 0 70px 5px 17px;
     margin: 0;
     flex-grow: 1;
-    width: 100%;
   }
 
   .contact-list__label {
@@ -102,7 +115,7 @@
   }
 
   .contact-list__image {
-    right: 76px;
+    right: 26px;
     top: 11px;
   }
 }
@@ -111,11 +124,16 @@
   .contact-list__wrapper {
     padding: 0 225px 0 112px;
     max-width: 1150px;
-    margin: 0 auto 24px;
+    margin: 0 auto 26px;
+  }
+
+  .contact-list__wrapper-input {
+    width: 90%;
   }
 
   .contact-list__image {
-    right: 228px;
+    right: 5px;
+    top: 8px;
   }
 
   .contact-list__label {

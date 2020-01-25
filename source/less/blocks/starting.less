@@ -30,6 +30,7 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
+  margin-top: 100px; //Для IE
 }
 
 .starting__item {
@@ -133,6 +134,12 @@
   display: block;
 }
 
+@media (min-width: 406px) {
+  .starting__list {
+    margin-top: 135px; //Для IE
+  }
+}
+
 @media @tablet {
   .starting {
     background-image: url("../../img/hero-tablet@1x.jpg");
@@ -168,6 +175,7 @@
   .starting__list {
     display: flex;
     padding: 0 50px;
+    margin-top: 335px; //Для IE
   }
 
   .starting__item {
@@ -184,6 +192,10 @@
         right: 35px;
       }
     }
+  }
+
+  .starting__text {
+    max-width: 180px;
   }
 }
 
@@ -212,6 +224,6 @@
 
   .starting__list {
     width: 1150px;
-    margin: 0 auto;
+    margin: 315px auto 0;
   }
 }
