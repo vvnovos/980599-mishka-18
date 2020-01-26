@@ -122,6 +122,11 @@
 
   .product__field {
     width: 33%;
+    max-width: 100px;
+  }
+
+  .product__value {
+    max-width: 200px;
   }
 
   .product__image {
@@ -150,11 +155,12 @@
   .product {
     width: 1150px;
     margin: 0 auto;
-  }
 
-  .product::after {
-    width: 1050px;
-    transform: translateX(0);
+    &::after {
+      width: 1050px;
+      transform: translateX(0);
+      transform: rotate(180deg);
+    }
   }
 
   .product__header {
@@ -166,7 +172,7 @@
     font-size: 53px;
     line-height: 57px;
     flex-grow: 1;
-    max-width: none;
+    max-width: 880px;
   }
 
   .product__week {
