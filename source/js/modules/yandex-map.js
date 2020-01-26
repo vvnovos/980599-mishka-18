@@ -1,4 +1,4 @@
-ymaps.ready(init);
+/*eslint-disable*/
 function init(ymaps) {
   /*eslint-enable*/
   var map = new ymaps.Map("map", {
