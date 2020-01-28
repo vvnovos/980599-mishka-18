@@ -59,7 +59,13 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
-      // imagemin.svgo()
+      imagemin.svgo({
+        plugins: [
+          {cleanupIDs: false},
+          {removeUselessDefs: false},
+          {removeViewBox: true}
+        ]
+      })
     ]))
     .pipe(gulp.dest("build/img"))
 });
