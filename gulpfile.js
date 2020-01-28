@@ -70,7 +70,11 @@ gulp.task("images", function () {
       imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
+<<<<<<< HEAD
     .pipe(gulp.dest("build/img"))
+=======
+    .pipe(gulp.dest("source/img"))
+>>>>>>> 71b3fa965888e474bbe406a87e883652258cd0c7
 });
 
 gulp.task("webp", function () {
@@ -118,6 +122,10 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 71b3fa965888e474bbe406a87e883652258cd0c7
 gulp.task("refresh", function (done) {
   server.reload();
   done();

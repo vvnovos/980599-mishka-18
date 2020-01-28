@@ -5,10 +5,17 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+<<<<<<< HEAD
     "autoprefixer": "9.5.x",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "4.0.x",
+=======
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+>>>>>>> 71b3fa965888e474bbe406a87e883652258cd0c7
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -23,7 +30,7 @@
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.3.3",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
