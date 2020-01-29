@@ -18,6 +18,7 @@ var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-jsmin");
 var del = require("del");
+var modifyCssUrls= require("gulp-css-url-adjuster");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
